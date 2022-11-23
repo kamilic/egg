@@ -187,7 +187,8 @@ There's a built-in [Log](./logger.md) in the egg, so you may use logger.debug() 
 this.logger.debug('current user: %j', this.user);
 
 // service
-this.ctx.logger.debug('debug info from service');
+this.ctx.logger.debug('debug info from service');![image](https://user-images.githubusercontent.com/8327041/203467410-d4340121-ea4b-486f-997d-04520a79eaa8.png)
+
 
 // app/init.js
 app.logger.debug('app init');
@@ -238,7 +239,7 @@ And then we may set breakpoints for debugging our app via `npm run debug`.
 Meanwhile, It also supports customized debug parameters.
 
 ```bash
-$ egg-bin debug --inpsect=9229
+$ egg-bin debug --inspect=9229
 ```
 
 - Debug port of `master` is 9229 or 5858 (Legacy Protocol).
